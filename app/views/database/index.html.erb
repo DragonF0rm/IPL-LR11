@@ -1,0 +1,8 @@
+<%= form_tag url_for(controller: 'database', action: 'output'), method: 'get', id: 'input_form' do %>
+
+  <%= label_tag :max, 'Сколько чисел рассматривать?' %>
+  <%= number_field_tag :max, nil, required: true, id: 'input_field' %>
+  <br>
+  <%= submit_tag 'Проверить гипотезу Симона о факториале' %>
+
+<% end %>

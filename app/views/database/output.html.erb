@@ -1,0 +1,15 @@
+<p id="result_status"><%= @result %></p>
+<table border="1" id="result_content">
+  <% i=1 %>
+  <% if @input_is_ok %>
+    <% @correct.each do |row| %>
+      <tr>
+        <th><%= i %></th>
+        <% i += 1 %>
+        <th><%= row %></th>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
+</p>
+<%= link_to 'Get full database', action: 'fulldb', method: 'get' %>

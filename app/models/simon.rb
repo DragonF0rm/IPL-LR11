@@ -1,0 +1,2 @@
+class Simon < ApplicationRecord
+end
